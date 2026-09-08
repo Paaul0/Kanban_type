@@ -1,0 +1,67 @@
+html,
+body {
+  height: 100%;
+  margin: 0; /* bônus: tira aquela margin padrão que o navegador coloca */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  border: 4px solid #ccc;
+  height: 65%;
+}
+
+.column {
+  width: 100%;
+  height: 100%;
+  background-color: #fffff0;
+}
+
+.column h2 {
+  text-align: center;
+  margin-top: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+#in-progress {
+  border-left: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 100px;
+}
+
+.trash {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+.card {
+  background-color: #eeeee0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.trash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 40% 0 40%;
+  transition: transform 0.2s;
+}
+
+.trash.hover {
+  transform: scale(1.2);
+}
